@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="" method="post" enctype="multipart/form-data">
+			<table width="400px" align="center">
+				<tr>
+					<td width="100px">
+						用户名称：
+					</td>
+					<td>
+						<input type="text" name="uname">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						用户密码:
+					</td>
+					<td>
+						<input type="password" name="upwd">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						籍贯：
+					</td>
+					<td>
+						<select name="city">
+							<option value="bj">北京</option>
+							<option value="sh">上海</option>
+							<option value="gz">广州</option>
+							<option value="sz">深圳</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>性别：</td>
+					<td>
+						<input type="radio" name="gender" value="m" id="r"><label for="r">男</label>
+						<input type="radio" name="gender" value="f" id="r2"><label for="r2">女</label>
+						<input type="radio" name="gender" value="un" checked id="r3"><label for="r3">不透露</label>
+					</td>
+				</tr>
+				<tr>
+					<td>头像：</td>
+					<td>
+						<input type="file" name="pic">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">愿意到以下城市去工作：</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<select name="job_city" size="5" multiple>
+							<option value="bj">北京</option>
+							<option value="sh">上海</option>
+							<option value="gz">广州</option>
+							<option value="sz">深圳</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>留言</td>
+					<td>
+						<textarea name="msg" cols="20" rows="6"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button>提交</button>
+						<input type="reset" value="清除">
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox"  name="auto">不要公开我的信息
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
